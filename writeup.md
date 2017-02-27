@@ -22,6 +22,7 @@ The goals / steps of this project are the following:
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consists four steps:
+
 1. Separate left and right lanes based on slope. Left lane has negative slope; right lane has positive slope.
 2. For each lane, find best fit line through linear regression.
 3. Adjust the best fit line based on line from the previous frame in order the make the video output smooth. The new line is ignored if it deviates too much from the previous frame.
